@@ -55,7 +55,7 @@ Home Run is a two-player mobile game that combines skill, strategy, and fun in a
 ## Repo Layout
 - Divided by front and back end work.
     - Within the front and backend, different components will have their own sub directories for modularity.
-          - For example, data management and the framework components will each have their own sub directories within the backend directory.
+       - For example, data management and the framework components will each have their own sub directories within the backend directory.
 
 
 We look forward to developing an engaging and enjoyable gaming experience with Home Run. For more information or to contribute to the project, please refer to the Git repository linked above.
