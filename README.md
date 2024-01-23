@@ -28,10 +28,6 @@ Home Run is a two-player mobile game that combines skill, strategy, and fun in a
 | Hinal                   | Frontend + Design                    | Assisting in frontend development and design elements.               |
 | Tian                    | Frontend (Game Logic)                | Implementing game logic and interactive elements.                    |
 
-## Communication
-- Primary Platform: Discord (Technical-Questions, Non-Technical-Questions, Announcements channels)
-- Secondary: Text message group chat for urgent communications.
-
 ## Development Process
 ### Software Toolset
 - Swift: For iOS app development.
