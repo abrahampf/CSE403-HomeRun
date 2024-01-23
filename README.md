@@ -40,23 +40,11 @@ Home Run is a two-player mobile game that combines skill, strategy, and fun in a
 - C++ with Unreal Engine: Frontend development.
 - iMessage Integration Tools: Xcode, Messages Framework, MSConversation, MSMessage, iMessage API.
 
-## Schedule
-- General Meetings: Tuesdays and Thursdays, 1:30-2:30 PM.
-- Subgroup Meetings: As needed, via Discord.
-
-Milestones: Set for both frontend and backend teams, focusing on design, implementation, integration, and testing phases.
-
 ## Risks
 - Limited access to MacOS for iOS development.
 - Complexity in integrating frontend and backend.
 - Challenges in hosting the game on GamePigeon.
 
-## Feedback Loop
-- Early prototype testing and feedback collection from users.
-- Repository Information
-
-## Product Description & Use Cases
-Detailed use cases for each team member are available in the project documentation. These include scenarios, actors, triggers, preconditions, postconditions, success scenarios, and failure conditions.
 
 ## Requirements
 ### Non-functional Requirements
@@ -67,6 +55,10 @@ Detailed use cases for each team member are available in the project documentati
 ### External Requirements
 - Robust error handling.
 - Smooth integration with GamePigeon.
+
+## Repo Layout
+- Divided by front and back end work
+    - Within the front and back, different components will have their own sub directories for modularity
 
 
 We look forward to developing an engaging and enjoyable gaming experience with Home Run. For more information or to contribute to the project, please refer to the Git repository linked above.
