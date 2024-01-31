@@ -3,10 +3,10 @@
 ## Team Report
 
 ### Last Week Goals:
-Do individual research and learning into how each of our components works to get started on implementation.
+Do individual/group research on sepeerated by frontend/backendand part of our project and learning into how each of our components works to get started on implementation. 
 
 ### Progress and Issues:
-We have been watching tutorials/ doing research on our own components. Getting familiar with our environment. Not stuck on any one piece just trying to beat the learning curve in time to successfully use our toolset. 
+We have been watching tutorials/ doing research on our own components. Getting familiar with our environment. Not stuck on any one piece just trying to beat the learning curve in time to successfully use our toolset. While also changing direction in what system we will use to implement our project dur to the unavailable resource at hand.
 
 ### Outline/Plans for Upcoming Week:
 #### Begin implementation:
