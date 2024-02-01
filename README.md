@@ -1,28 +1,24 @@
 # CSE 403 - Home Run
 ## Introduction
-Welcome to the README.md for Home Run, an interactive mobile game project designed and developed by a dedicated team of software developers. This document provides an overview of the project, including its goals, team structure, development process, and key features.
+Welcome to Home Run, an interactive Android-based mobile baseball game project for University of Washington's course CSE 403 Software Engineering.
 
 ## Project Overview
-Home Run is a two-player mobile game that combines skill, strategy, and fun in a baseball-themed environment. Players can challenge each other, customize their gameplay experience, and engage in a dynamic and interactive game of pitch and bat.
+Home Run is a single-player game that combines skill, strategy, and fun in a baseball-themed environment. Players can challenge AI to engage in a dynamic and interactive game of pitch and bat.
 
 ## Key Features
-- Two-player Gameplay: Compete against another player in an exciting head-to-head match.
+- Gameplay: Compete against AI player in an exciting head-to-head match.
 - Various Pitch Styles: Choose from different pitching styles to challenge your opponent.
-- Interactive Batting: Swipe to bat and score runs.
+- Interactive Batting: Simply swipe to bat and score runs.
 - Customization: Personalize players, balls, bats, and scenery.
 
 ## Goals
 - To create an engaging and interactive mobile gaming experience.
-- To ensure seamless integration of front-end and back-end components.
-- To maintain high standards of design and functionality consistent with iOS applications.
-- Team Structure
-- Achievement system (stretch).
-- Option to play against AI (stretch).
+- To maintain high standards of design and functionality consistent with Android applications.
 
 ## Team members & roles
 | Team Member             | Role                                 | Responsibilities                                                     |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------|
-| Abraham Pasillas-Flores | Backend (Framework Design)           | Developing the game's backend architecture and integrating with iOS. |
+| Abraham Pasillas-Flores | Backend (Framework Design)           | Developing the game's backend architecture.                          |
 | Azucena Solano-Gonzalez | Backend (Data Management and Server) | Managing server-side operations and data handling.                   |
 | Nathan                  | Frontend + Design                    | Designing user interface and handling frontend development.          |
 | Hinal                   | Frontend + Design                    | Assisting in frontend development and design elements.               |
@@ -30,27 +26,31 @@ Home Run is a two-player mobile game that combines skill, strategy, and fun in a
 
 ## Development Process
 ### Software Toolset
-- Swift: For iOS app development.
-- Java & Python: Backend development.
-- MySQL: Data management.
-- C++ with Unreal Engine: Frontend development.
-- iMessage Integration Tools: Xcode, Messages Framework, MSConversation, MSMessage, iMessage API.
+- Unity with C#: Central to game development, handling both front-end and core game mechanics.
+- Android Studio: For additional Android-specific features and testing.
+- Java and Python: For backend services, including server logic and web services.
+- Database: For real-time data management  and syncing.
+- Unity APIs and Google Play Services: For integrating in-app purchases, leaderboards, and Android functionalities.
+- Third-Party SDKs: For ads, analytics, and social media features.
+
 
 ## Risks
-- Limited access to MacOS for iOS development.
-- Complexity in integrating frontend and backend.
-- Challenges in hosting the game on GamePigeon.
+- Unity Learning Curve: The team has limited Unity experience, presenting a high impact risk due to Unity's complexity. 
+- Google Play Store Compliance: Adhering to Google Play Store guidelines is a risk because the team lacks app deployment experience. 
+- Krita-Unity Integration: Integrating Krita animations into Unity poses a high impact risk due to unfamiliarity with both tools. 
+
 
 
 ## Requirements
 ### Non-functional Requirements
-- Secure, private sessions between players.
-- iOS-themed simplicity in design and interactions.
-- Efficient user interactions with minimal in-game controls.
+- Low loading time ensuring gaming experience that can take place in anytime, anywhere.
+- The game should run at 60 FPS for a smooth experience.
+- Design for minimal and efficient user interactions.
+
 
 ### External Requirements
 - Robust error handling.
-- Smooth integration with GamePigeon.
+- Easy installation and play.
 
 ## Repo Layout
 - Divided by front and back end work.
