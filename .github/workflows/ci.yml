@@ -1,0 +1,11 @@
+name: CI Demo
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Echo a message
+      run: echo "Hello, GitHub Actions!"
