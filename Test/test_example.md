@@ -2,6 +2,7 @@ Baseball Unity test examples
 
 Example 1: To test if we print homerun when the bat hits the ball.
 
+```
 using NUnit.Framework;
 using UnityEngine;
 
@@ -25,10 +26,11 @@ public class BallControllerTests
         LogAssert.Expect(LogType.Log, "Home Run!");
     }
 }
-
+```
 
 Example 2: Checks if the ball exists in the scene
 
+```
 using NUnit.Framework;
 using UnityEngine;
 
@@ -47,10 +49,11 @@ public class BaseballGameTests
         Assert.NotNull(ballController, "BallController component should exist on the Ball object");
     }
 }
-
+```
 
 Example 3: Checks if the player scores increments when a hit occurs
 
+```
 using NUnit.Framework;
 using UnityEngine;
 
@@ -70,4 +73,4 @@ public class BaseballGameTests
         Assert.AreEqual(1, gameManager.GetScore(), "Score should increment to 1 after a hit");
     }
 }
-
+```
