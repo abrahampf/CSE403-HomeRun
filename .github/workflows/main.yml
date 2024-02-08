@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   build:
+    permissions: write-all
     name: Test project
     runs-on: ubuntu-latest
     steps:
