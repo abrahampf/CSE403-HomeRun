@@ -22,6 +22,7 @@ ExportedObj/
 *.booproj
 *.svd
 *.pbd
+*.log
 
 *.pibd.meta
 
