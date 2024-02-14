@@ -1,4 +1,5 @@
-Baseball Unity test examples 
+<!---
+Baseball Unity test examples
 
 Example 1: To test if we print homerun when the bat hits the ball.
 
@@ -74,3 +75,4 @@ public class BaseballGameTests
     }
 }
 ```
+--->

@@ -1,10 +1,12 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-Assets/AssetStoreTools*
-
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Aa]rtifacts/
+/[Ll]ogs/
+/[Cc]odeCoverage/
+/Assets/AssetStoreTools*
 
 /.vs/
 
@@ -21,6 +23,7 @@ ExportedObj/
 *.booproj
 *.svd
 *.pbd
+*.log
 
 *.pibd.meta
 
