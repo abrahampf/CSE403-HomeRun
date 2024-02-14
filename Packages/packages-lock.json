@@ -1,54 +1,11 @@
 {
   "dependencies": {
-<<<<<<< HEAD
     "com.unity.adaptiveperformance": {
       "version": "5.0.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.profiling.core": "1.0.2"
-=======
-    "com.unity.2d.sprite": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {}
-    },
-    "com.unity.2d.tilemap": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.modules.tilemap": "1.0.0",
-        "com.unity.modules.uielements": "1.0.0"
-      }
-    },
-    "com.unity.ads": {
-      "version": "4.4.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.ai.navigation": {
-      "version": "1.1.5",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.ai": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.analytics": {
-      "version": "3.8.1",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.services.analytics": "1.0.4",
-        "com.unity.ugui": "1.0.0"
->>>>>>> 4412b7758dcd7658ca6f1ed2e0e23906d209b0fd
       },
       "url": "https://packages.unity.com"
     },
@@ -141,20 +98,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
-    "com.unity.services.core": {
-      "version": "1.12.2",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.nuget.newtonsoft-json": "3.2.1",
-        "com.unity.modules.androidjni": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
->>>>>>> 4412b7758dcd7658ca6f1ed2e0e23906d209b0fd
     "com.unity.test-framework": {
       "version": "1.1.33",
       "depth": 0,
