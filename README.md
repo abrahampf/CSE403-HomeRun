@@ -1,4 +1,9 @@
 # CSE 403 - Home Run
+
+## Learn about Home Run:
+- [User manual](https://github.com/abrahampf/CSE403-HomeRun/tree/main/Documentations/users) <br>
+- [Developer manual](https://github.com/abrahampf/CSE403-HomeRun/tree/main/Documentations/developers)
+
 ## Introduction
 Welcome to Home Run, an interactive Android-based mobile baseball game project for University of Washington's course CSE 403 Software Engineering.
 
