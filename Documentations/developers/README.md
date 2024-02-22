@@ -20,11 +20,11 @@
 1. Open project/build
 
 3. Test various mechanics in the first login scene.
-4. Able to input user name 
+4. Able to input user name
 5. Able to input password
 6. Creating an account with those inputs that has a unique username
 7. Able to sign in with a account that has been successfully created
-8. Testing the mechanics after the click of the Sign-in button 
+8. Testing the mechanics after the click of the Sign-in button
 9. Does it let you enter the first scene/game.
 10. Can you swipe and hit the ball?
 - Unit test is not yet available. You can include custom test files in /Assets/Scripts/Tests.
@@ -32,7 +32,7 @@
 ### <p><u>Run the System</u></p>
 
 1. Follow the instructions above to build the system and save the executable file in a folder.
-   
+
 3. Navigate to the folder where the executable file was created.
 4. Open the executable file to launch the baseball game/build.
 5. Follow the on-screen prompts and instructions to sign in and play the game.
