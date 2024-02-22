@@ -70,3 +70,6 @@ Assets/Polytope Studio/Lowpoly_Environments/SRP/PT_Nature_Free_URP_10.10.1.unity
 Assets/Polytope Studio/Lowpoly_Environments/SRP/PT_Nature_Free_URP_14.0.9.unitypackage.meta
 Assets/Polytope Studio/Lowpoly_Environments/SRP/PT_Nature_Free_URP_12.1.10.unitypackage.meta
 Packages/packages-lock.json
+
+# Ignore logs
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
