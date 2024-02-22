@@ -431,7 +431,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Response
 --- !u!222 &621876639
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -456,6 +456,7 @@ MonoBehaviour:
   passwordField: {fileID: 0}
   SignInButton: {fileID: 0}
   CreateNewButton: {fileID: 0}
+  action: 
   backendResponse: {fileID: 0}
 --- !u!1 &670131125
 GameObject:
@@ -1098,6 +1099,7 @@ MonoBehaviour:
   passwordField: {fileID: 1709634603}
   SignInButton: {fileID: 863106460}
   CreateNewButton: {fileID: 1232252634}
+  action: 
   backendResponse: {fileID: 621876638}
 --- !u!1 &1232252632
 GameObject:
