@@ -5,7 +5,7 @@ using TMPro;
 
 public class ScoreDisplayer : MonoBehaviour
 {
-    public ScoreTracker scoreTracker; // Reference to the ScoreTracker script
+    public static ScoreTracker scoreTracker; // Reference to the ScoreTracker script
 
     // Start is called before the first frame update
     void Start()
