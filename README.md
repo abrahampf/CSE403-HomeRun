@@ -11,10 +11,10 @@ Welcome to Home Run, an immersive 3D baseball game developed as part of the Univ
 Home Run offers a thrilling single-player experience set in a vibrant baseball stadium environment. Players engage in dynamic matches against AI opponents, showcasing their batting skills and strategic prowess.
 
 ## Key Features
-- **Gameplay**: Engage in head-to-head matches against AI opponents.
-- **Pitch Variety**: Choose from various pitching styles to challenge your skills.
+- **Gameplay**: Engage in head-to-head matches against AI opponent.
+- **Authentication**: Register, sign-in and logout of thier account securly.
 - **Interactive Batting**: Swipe to swing the bat and score runs.
-- **Customization**: Personalize players, balls, bats, and stadium for a unique experience.
+- **LeaderBoard**: Shows players high-scores and achievements.
 
 ## Objectives
 - Deliver an immersive and interactive 3D gaming experience.
