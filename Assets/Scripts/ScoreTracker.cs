@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class ScoreTracker : MonoBehaviour
 {
     public GameObject ballObject;
-    public Vector3 fixedPoint = new Vector3(0f, 0f, -4f); // The fixed point from which the distance will be calculated
+    private BatterReference batterReference;
+    private Vector3 fixedPoint;
     public float score = 0; // The distance between original point (batter) and the ball when the ball touches the ground
                             // for the first time.
     public Bat batScript; // Reference to the script with the hasBeenBatted field
@@ -15,10 +16,14 @@ public class ScoreTracker : MonoBehaviour
 
     void Start()
     {
-        // Get the GameObject with the Rigidbody component
-        if (ballObject == null)
+        if (ballObject != null)
         {
-            UnityEngine.Debug.LogError("Ball GameObject is not assigned in the inspector.");
+            batterReference = ballObject.GetComponent<BatterReference>();
+            fixedPoint = batterReference.referencePosition;
+        }
+        else
+        {
+            UnityEngine.Debug.LogError("Ball object is not assigned.");
         }
     }
 
@@ -27,6 +32,8 @@ public class ScoreTracker : MonoBehaviour
         // Calculate the distance between the ball and the fixed point when the ball's y-coordinate is <= 0.01.
         // y <= 0.01 is to register the score when the ball touches the ground, which using y <= 0 won't count
         // as ground has a notion of "thickness" making the ball unreachable to y = 0.
+
+        // This is a temporary solution as it doesn't account for non-ground surfaces.
         if (!scoreUpdated && batScript.hasBeenBatted && ballObject.transform.position.y <= 0.05f)
         {
             score = ballObject.transform.position.z - fixedPoint.z;

@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class BattingInputManager : MonoBehaviour
 {
-    public const float frontHittingBoundary = -1.75f;
-    public const float backHittingBoundary = -5.25f;
-    public const float centerHitZValue = (frontHittingBoundary + backHittingBoundary) / 2;
+    // public const float frontHittingBoundary = -1.75f;
+    // public const float backHittingBoundary = -5.25f;
+    // public const float centerHitZValue = (frontHittingBoundary + backHittingBoundary) / 2;
 
     private Vector2 touchStartPosition;
     private Vector2 touchEndPosition;
@@ -17,9 +18,9 @@ public class BattingInputManager : MonoBehaviour
     private float touchEndTime;
     public float swingDuration;
 
-    private float minSwipeDistance = 0f;
+    // private float minSwipeDistance = 0f;
 
-    private bool firstStationary = true;
+    // private bool firstStationary = true;
 
     public Bat bat; // Reference to the Bat script
 
@@ -41,6 +42,7 @@ public class BattingInputManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            /*
             // Check if the ball is within the specified z-value range
             if (IsBallInRange())
             {
@@ -55,7 +57,17 @@ public class BattingInputManager : MonoBehaviour
                     UnityEngine.Debug.LogError("Bat reference not set in InputManager!");
                 }
             }
+            */
+            if (bat != null)
+            {
+                bat.BatBall();
+            }
+            else
+            {
+                UnityEngine.Debug.LogError("Bat reference not set in BattingInputManager!");
+            }
         }
+        /*
         if (Input.touchCount > 0) // Check if there is at least one touch
         {
             Touch touch = Input.GetTouch(0);
@@ -94,8 +106,10 @@ public class BattingInputManager : MonoBehaviour
                     break;
             }
         }
+        */
     }
 
+    /*
     private void DetectSwipe()
     {
         // Check if the swipe is long enough to be considered a swipe
@@ -108,7 +122,6 @@ public class BattingInputManager : MonoBehaviour
 
             if (bat != null)
             {
-
                 float ballContactZValue = -bat.transform.position.z;
                 bat.BatBall(ballContactZValue, swipeVector, swingDuration);
             }
@@ -118,11 +131,14 @@ public class BattingInputManager : MonoBehaviour
             }
         }
     }
+    */
 
+    /*
     // Check if the ball is within the specified z-value range
     bool IsBallInRange()
     {
         float ballZ = bat.transform.position.z; // Get the z-position of the ball
         return ballZ > backHittingBoundary && ballZ < frontHittingBoundary; // Check if the z-value falls within the range
     }
+    */
 }
