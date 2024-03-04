@@ -65,7 +65,9 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 - Navigate to the repository folder and open it in Unity Editor.
 - Select "File > Build Settings" and choose your platform.
   ![image](https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/a2b2452e-69fc-42b5-a623-70157b1b790e)
+  
 - In the Unity Hub Projects section, click Add and choose the ./HomeRun directory
+  
   ![image](https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/a670aa9e-7eb5-47da-b460-6d548be14868)
 - Click "Build" to create the executable file and specify its location.
 
