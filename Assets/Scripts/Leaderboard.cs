@@ -36,7 +36,7 @@ public class Leaderboard : MonoBehaviour
     public void GameScene()
     {
         Debug.Log("Game scene here");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("MainScene");
     }
 
     public void BeginScene()
@@ -44,6 +44,6 @@ public class Leaderboard : MonoBehaviour
         Debug.Log("Begin scene here");
         DBManager.logOut();
         DbCalls.Clear_Dictionary();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("BeginScene");
     }
 }
