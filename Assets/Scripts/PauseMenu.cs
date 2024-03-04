@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-   
+
     public GameObject pauseMenu;
     public bool isPaused;
     // Start is called before the first frame update
     void Start()
     {
         pauseMenu.SetActive(false);
-        
+
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class PauseMenu : MonoBehaviour
                 PauseGame();
             }
 
-        }   
+        }
     }
 
     public void PauseGame()
@@ -51,7 +51,11 @@ public class PauseMenu : MonoBehaviour
     public void GoToMainMenu ()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("LoginPage4");
+        if (DBManager.loggedIn()) {
+            SceneManager.LoadScene("New_leader");
+        } else {
+            SceneManager.LoadScene("BeginScene");
+        }
     }
 
     public void Instructions()
