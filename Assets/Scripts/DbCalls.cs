@@ -55,7 +55,7 @@ public class DbCalls : MonoBehaviour
             int colonIndex = errorString.IndexOf(':');
             string errorMessage = errorString[(colonIndex + 2)..];
             backendResponse.text = errorMessage;
-            float delayInSeconds = 4f;
+            float delayInSeconds = 2.5f;
             Invoke(nameof(ReloadLoginScene), delayInSeconds);
         } else {
             Debug.Log("User logged in successfully");
@@ -72,7 +72,7 @@ public class DbCalls : MonoBehaviour
             // Timers
             yield return new WaitForSeconds(3f);
             float delayInSeconds = 3f;
-            backendResponse.text = "Loading game...";
+            backendResponse.text = "Loading...";
             CallLeader();
             Invoke(nameof(LeaderboardScene), delayInSeconds);
         }
@@ -97,7 +97,7 @@ public class DbCalls : MonoBehaviour
             int colonIndex = errorString.IndexOf(':');
             string errorMessage = errorString[(colonIndex + 2)..];
             backendResponse.text = errorMessage;
-            float delayInSeconds = 4f;
+            float delayInSeconds = 3f;
             Invoke(nameof(ReloadLoginScene), delayInSeconds);
         } else {
             Debug.Log("Registered successfully");
@@ -108,9 +108,8 @@ public class DbCalls : MonoBehaviour
             // Timers
             yield return new WaitForSeconds(3f);
             float delayInSeconds = 3f;
-            backendResponse.text = "Loading game...";
+            backendResponse.text = "Loading...";
             CallLeader();
-            // Leaderboard.DisplayLeaderboard();
             Invoke(nameof(LeaderboardScene), delayInSeconds);
         }
     }
