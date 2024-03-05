@@ -8,11 +8,11 @@ public class ScoreTracker : MonoBehaviour
     public GameObject ballObject;
     private BatterReference batterReference;
     private Vector3 fixedPoint;
-    public float score = 0; // The distance between original point (batter) and the ball when the ball touches the ground
+    public static float score = 0; // The distance between original point (batter) and the ball when the ball touches the ground
                             // for the first time.
     public Bat batScript; // Reference to the script with the hasBeenBatted field
 
-    private bool scoreUpdated = false; // Flag to track whether the score has been updated
+    private static bool scoreUpdated = false; // Flag to track whether the score has been updated
 
     void Start()
     {
@@ -41,5 +41,18 @@ public class ScoreTracker : MonoBehaviour
             // Set the flag to true to indicate that the score has been updated
             scoreUpdated = true;
         }
+    }
+
+    // Provide a static method or property to access the score from other scripts
+    public static float GetScore()
+    {
+        return score;
+    }
+
+    // Optionally, provide a method to reset the score, which can be called when restarting the game or under specific conditions
+    public static void ResetScore()
+    {
+        score = 0;
+        scoreUpdated = false;
     }
 }

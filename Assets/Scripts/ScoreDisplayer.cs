@@ -5,31 +5,25 @@ using TMPro;
 
 public class ScoreDisplayer : MonoBehaviour
 {
-    public static ScoreTracker scoreTracker; // Reference to the ScoreTracker script
+    // public static ScoreTracker scoreTracker; // Reference to the ScoreTracker script
+    public TMP_Text scoreText; // Reference to the TextMeshPro component
 
     // Start is called before the first frame update
     void Start()
     {
-        // Ensure that the ScoreTracker reference is assigned
-        if (scoreTracker == null)
-        {
-            UnityEngine.Debug.LogError("ScoreTracker reference is not assigned in the inspector.");
-            return;
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        TMP_Text tmpText = GetComponent<TMP_Text>();
         // Update the score displayed in the UI Text component
-        if (scoreTracker != null && tmpText != null)
+        if (scoreText != null)
         {
-            tmpText.text = "Score: " + scoreTracker.score.ToString("F2");
+            scoreText.text = "Score: " + ScoreTracker.score.ToString("F2");
         }
         else
         {
-            UnityEngine.Debug.LogError("TMP Text component is not found on this GameObject.");
+            UnityEngine.Debug.LogError("TextMeshPro component not found for displaying score!");
         }
     }
 }
