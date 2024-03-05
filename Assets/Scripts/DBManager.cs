@@ -20,6 +20,6 @@ public class DBManager {
     }
 
     public static void updateScore() {
-        currentScore += (int) ScoreDisplayer.scoreTracker.score;
+        currentScore += (int) ScoreTracker.score;
     }
 }
