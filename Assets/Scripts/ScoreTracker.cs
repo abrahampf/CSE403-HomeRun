@@ -36,7 +36,8 @@ public class ScoreTracker : MonoBehaviour
         // This is a temporary solution as it doesn't account for non-ground surfaces.
         if (!scoreUpdated && batScript.hasBeenBatted && ballObject.transform.position.y <= 0.05f)
         {
-            score = ballObject.transform.position.z - fixedPoint.z;
+            // score = ballObject.transform.position.z - fixedPoint.z;
+            score += 2;
 
             // Set the flag to true to indicate that the score has been updated
             scoreUpdated = true;

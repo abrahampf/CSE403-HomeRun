@@ -9,6 +9,7 @@ public class Bat : MonoBehaviour
     public const float frontHittingBoundary = 2.0f;
     public const float backHittingBoundary = -2.0f;
     public const float centerHitZValue = 0.0f;
+    public bool forceAdded = false;
 
     private BatterReference batterReference;
 
@@ -25,7 +26,7 @@ public class Bat : MonoBehaviour
 
     /**
      * Method to bat the ball through mouse click
-     * 
+     *
      * @param ballContactZValue the relative delay of player's batting input to the earliest possible time to bat.
      *                Although the variable name is "time", the delay is computed based on baseball's z-axis
      *                coordinate (-(current z-value - smallest z-value that allows hitting), it is negative as
@@ -33,9 +34,9 @@ public class Bat : MonoBehaviour
      */
     public void BatBall()
     {
-        if (!hasBeenBatted && BallIsInRange())
+        if (BallIsInRange())
         {
-            hasBeenBatted = true; // Mark as batted to prevent multiple bat events
+            // hasBeenBatted = true; // Mark as batted to prevent multiple bat events
 
             float ballContactZValue = -transform.position.z + batterReference.referencePosition.z;
 
@@ -45,19 +46,23 @@ public class Bat : MonoBehaviour
             Vector3 delayedImpactForce = new Vector3(-0.15f * (ballContactZValue + centerHitZValue), 0, 0);
             // Vector3 delayedImpactForce = new Vector3(0, 0, 0);
 
+            // Debug.Log("Force added to ball");
             GetComponent<Rigidbody>().AddForce((Vector3.back + delayedImpactForce) * -100f, ForceMode.Impulse);
+            Debug.Log("Force added to ball");
+            forceAdded = true;
+        } else {
+            forceAdded = false;
         }
     }
 
     /**
      * Method to bat the ball through swipe
-     * 
+     *
      * @param ballContactZValue the relative delay of player's batting input to the earliest possible time to bat.
      *                Although the variable name is "time", the delay is computed based on baseball's z-axis
      *                coordinate (-(current z-value - smallest z-value that allows hitting), it is negative as
      *                the ball's absolute z-value decreases going from the pitcher to the batter).
      */
-    
     public void BatBall(Vector2 swipeVector, float swingDuration)
     {
         if (!hasBeenBatted && BallIsInRange())
@@ -81,7 +86,6 @@ public class Bat : MonoBehaviour
             GetComponent<Rigidbody>().AddForce((forwardForce + delayedImpactForce + verticalForce) * batForce, ForceMode.Impulse);
         }
     }
-    
 
     private bool BallIsInRange()
     {
@@ -94,7 +98,6 @@ public class Bat : MonoBehaviour
             UnityEngine.Debug.Log("Ball is in range");
             return true;
         }
-        
         UnityEngine.Debug.Log("Ball is not in range");
         return false;
     }

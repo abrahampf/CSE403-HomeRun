@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class ScoreDisplayer : MonoBehaviour
 {
     // public static ScoreTracker scoreTracker; // Reference to the ScoreTracker script
-    public TMP_Text scoreText; // Reference to the TextMeshPro component
+    public Text scoreText; // Reference to the TextMeshPro component
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class ScoreDisplayer : MonoBehaviour
         // Update the score displayed in the UI Text component
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + ScoreTracker.score.ToString("F2");
+            scoreText.text = ScoreTracker.score.ToString("F2");
         }
         else
         {
