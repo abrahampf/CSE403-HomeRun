@@ -8,7 +8,7 @@ public class DBManager {
 
     public static string username = null;
     public static int highscore = 0;
-    public static int currentScore = 25;
+    public static int currentScore = 0;
     public static bool loggedIn() {
         return username != null;
     }

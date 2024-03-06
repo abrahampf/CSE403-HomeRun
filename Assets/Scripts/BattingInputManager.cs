@@ -113,10 +113,10 @@ public class BattingInputManager : MonoBehaviour
     private void DetectSwipe()
     {
         // Check if the swipe is long enough to be considered a swipe
-        if (Vector2.Distance(touchStartPosition, touchEndPosition) >= minSwipeDistance) 
+        if (Vector2.Distance(touchStartPosition, touchEndPosition) >= minSwipeDistance)
         {
             UnityEngine.Debug.Log("Entered DetectSwipe");
-            
+
             // Here you can add additional logic to determine the direction of the swipe
             // and adjust the bat swing strength or direction accordingly.
 

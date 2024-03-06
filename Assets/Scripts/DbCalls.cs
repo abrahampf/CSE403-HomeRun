@@ -47,6 +47,7 @@ public class DbCalls : MonoBehaviour
         form.AddField("action", action);
         string url = "https://cse403-homerunphp.azurewebsites.net";
         UnityWebRequest www = UnityWebRequest.Post(url, form);
+        backendResponse.text = "Logging in...";
         yield return www.SendWebRequest();
 
         if (www.downloadHandler.text[0] != '0') {
@@ -88,6 +89,7 @@ public class DbCalls : MonoBehaviour
         form.AddField("highscore", DBManager.currentScore.ToString());
         string url = "https://cse403-homerunphp.azurewebsites.net";
         UnityWebRequest www = UnityWebRequest.Post(url, form);
+        backendResponse.text = "Register...";
         yield return www.SendWebRequest();
 
 
@@ -103,6 +105,7 @@ public class DbCalls : MonoBehaviour
             Debug.Log("Registered successfully");
             backendResponse.text = "Created Account as: " + username.text;
             DBManager.highscore = DBManager.currentScore;
+            DBManager.username = username.text;
 
 
             // Timers
@@ -164,6 +167,10 @@ public class DbCalls : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void GoBack() {
+        SceneManager.LoadScene("BeginScene");
     }
 
     public static void Clear_Dictionary() {
