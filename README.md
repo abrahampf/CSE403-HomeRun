@@ -59,7 +59,7 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 ## Instructions
 ### Build System
 #### How to Build the System:
-#####Building system in Andriod phone:
+##### Building system in Andriod phone:
 - Ensure Unity Hub (latest version) and Unity Editor (preferably 2019 version) are installed.
 - Clone the repository to your local machine.
 - Open Unity Hub and add the cloned repository.
@@ -95,7 +95,7 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 
 - The game should show up on your phone.
 
-#####Building system in Unity:
+##### Building system in Unity:
 - Ensure Unity Hub (latest version) and Unity Editor (preferably 2019 version) are installed.
 - Clone the repository to your local machine.
 - Open Unity Hub and add the cloned repository.
