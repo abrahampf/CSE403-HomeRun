@@ -67,11 +67,11 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 - Connect the computer and you phone via a wire connector.
 - Change the settings on your android phone to developer mode.
   
-  <img width="492" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/553d05d7-65f0-474a-971b-8a92588ee25b">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/553d05d7-65f0-474a-971b-8a92588ee25b">
 
 - Change the battery setting to Trasfer files (MTP) by sliding down the battery menu.
   
-  <img width="189" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/f276bb47-45e5-4a76-b93c-70e3a602de20">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/f276bb47-45e5-4a76-b93c-70e3a602de20">
 
 - On Unity go to file-> build setting.
 
@@ -79,11 +79,11 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 
 - On the platform tab of the build setting, change the device to Andriod
 
-  <img width="328" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/c450383d-3686-4649-bcb7-51d5ea50c345">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/c450383d-3686-4649-bcb7-51d5ea50c345">
 
 - On the right tab of the android, in the Run Device setting select all compatible devices and then click on refresh. 
 
-  <img width="368" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/48d4e591-d01f-4318-a5a2-9cb64e47958e">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/48d4e591-d01f-4318-a5a2-9cb64e47958e">
 
 - Go to the Run device setting again and now your android phone should show up select that and press the build button.
 
@@ -105,15 +105,15 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 #### How to Test the System:
 - Go to Windows -> General -> Test Runner.
 
-  <img width="423" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/38170295-88f9-4677-820e-fdde7d435c5e">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/38170295-88f9-4677-820e-fdde7d435c5e">
   
 - Click on the Play Mode.
 
-  <img width="505" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/569ed0f0-1a44-4750-8fb6-5e15be869d04">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/569ed0f0-1a44-4750-8fb6-5e15be869d04">
  
 - Select and click Run All button to run all the test.
 
-  <img width="499" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/1741208d-1c74-47db-bb59-7d71b6454575">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/1741208d-1c74-47db-bb59-7d71b6454575">
 
 
 ### Run The System
@@ -127,22 +127,22 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
   
 - On the bottom left cornor, click on the drop down menu on Game and select Simulator.
 
-  <img width="439" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/ccb7dac2-8ab8-4b21-b631-8814242d0ffd">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/ccb7dac2-8ab8-4b21-b631-8814242d0ffd">
 
 - Select The correct device: Samsung Galaxy S8.
 
-  <img width="852" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/9199e157-9a06-436d-a48d-d5a4f12e02f0">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/9199e157-9a06-436d-a48d-d5a4f12e02f0">
 
 - Click on the rotate button to make the phone sideways for a better view of the game.
 
-  <img width="807" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/a40523e6-ab44-4c25-a70c-19dc37ffb30b">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/a40523e6-ab44-4c25-a70c-19dc37ffb30b">
 
 - Click on the play on the top.
 
-  <img width="996" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/dd8dd186-e2e6-484f-bce7-f7fee9abaf85">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/dd8dd186-e2e6-484f-bce7-f7fee9abaf85">
 
 - The game should look like this in the simulator, now follow on-screen prompts and instructions to register or press start game to  play the game.
 
-  <img width="1043" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/43b0abf8-1e61-441e-a642-15588f3d8d51">
+  <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/43b0abf8-1e61-441e-a642-15588f3d8d51">
 
 We are committed to enhancing the Home Run gaming experience. For contributions or further inquiries, please refer to the Git repository linked above.
