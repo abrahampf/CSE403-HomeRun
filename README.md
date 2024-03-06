@@ -59,33 +59,90 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 ## Instructions
 ### Build System
 #### How to Build the System:
+#####Building system in Andriod phone:
 - Ensure Unity Hub (latest version) and Unity Editor (preferably 2019 version) are installed.
 - Clone the repository to your local machine.
 - Open Unity Hub and add the cloned repository.
 - Navigate to the repository folder and open it in Unity Editor.
-- Select "File > Build Settings" and choose your platform.
-  ![image](https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/a2b2452e-69fc-42b5-a623-70157b1b790e)
+- Connect the computer and you phone via a wire connector.
+- Change the settings on your android phone to developer mode.
   
-- In the Unity Hub Projects section, click Add and choose the ./HomeRun directory
+  <img width="492" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/553d05d7-65f0-474a-971b-8a92588ee25b">
+
+- Change the battery setting to Trasfer files (MTP) by sliding down the battery menu.
   
-  ![image](https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/a670aa9e-7eb5-47da-b460-6d548be14868)
-- Click "Build" to create the executable file and specify its location.
+  <img width="189" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/f276bb47-45e5-4a76-b93c-70e3a602de20">
+
+- On Unity go to file-> build setting.
+
+  <img width="440" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/2600008b-e3dc-4a4c-8d8e-07eb9fe7219b">
+
+- On the platform tab of the build setting, change the device to Andriod
+
+  <img width="328" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/c450383d-3686-4649-bcb7-51d5ea50c345">
+
+- On the right tab of the android, in the Run Device setting select all compatible devices and then click on refresh. 
+
+  <img width="368" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/48d4e591-d01f-4318-a5a2-9cb64e47958e">
+
+- Go to the Run device setting again and now your android phone should show up select that and press the build button.
+
+- This should let you save the APK, save it in your desired folder.
+
+- Drag the APK folder in the desired folder in your phone from your computer. 
+
+- Find that APK in your phone (it should be where you placed it from your computer) and then install it. 
+
+- The game should show up on your phone.
+
+#####Building system in Unity:
+- Ensure Unity Hub (latest version) and Unity Editor (preferably 2019 version) are installed.
+- Clone the repository to your local machine.
+- Open Unity Hub and add the cloned repository.
+- Navigate to the repository folder and double-click to open it in Unity Editor.
+
 
 #### How to Test the System:
-- Open the project/build folder.
-- Test various mechanics in the login scene:
-  - Input username and password.
-  - Create an account with unique credentials.
-  - Sign in with the created account.
-- Test mechanics after signing in:
-  - Ensure smooth transition to the game scene.
-  - Verify functionality of swiping to hit the ball.
+- Go to Windows -> General -> Test Runner.
+
+  <img width="423" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/38170295-88f9-4677-820e-fdde7d435c5e">
+  
+- Click on the Play Mode.
+
+  <img width="505" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/569ed0f0-1a44-4750-8fb6-5e15be869d04">
+ 
+- Select and click Run All button to run all the test.
+
+  <img width="499" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/1741208d-1c74-47db-bb59-7d71b6454575">
+
 
 ### Run The System
-#### How to Run the System:
+#### How to Run the System for unity:
 - Build the system using the instructions above and save the executable file.
 - Navigate to the folder containing the executable file.
 - Open the executable file to launch the baseball game.
-- Follow on-screen prompts and instructions to sign in and play the game.
+- On the upper right corner toggle over the game and select layout to 2 by 3
+  
+  <img width="467" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/00e0c307-f239-46b9-a28c-7796aba9c183">
+  
+- On the bottom left cornor, click on the drop down menu on Game and select Simulator.
+
+  <img width="439" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/ccb7dac2-8ab8-4b21-b631-8814242d0ffd">
+
+- Select The correct device: Samsung Galaxy S8.
+
+  <img width="852" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/9199e157-9a06-436d-a48d-d5a4f12e02f0">
+
+- Click on the rotate button to make the phone sideways for a better view of the game.
+
+  <img width="807" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/a40523e6-ab44-4c25-a70c-19dc37ffb30b">
+
+- Click on the play on the top.
+
+  <img width="996" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/dd8dd186-e2e6-484f-bce7-f7fee9abaf85">
+
+- The game should look like this in the simulator, now follow on-screen prompts and instructions to register or press start game to  play the game.
+
+  <img width="1043" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/43b0abf8-1e61-441e-a642-15588f3d8d51">
 
 We are committed to enhancing the Home Run gaming experience. For contributions or further inquiries, please refer to the Git repository linked above.
