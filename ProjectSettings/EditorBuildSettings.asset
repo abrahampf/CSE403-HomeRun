@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/New_leader.unity
     guid: 3d4fb58de4ec60441837e047f77def75
   - enabled: 1
-    path: Assets/Scenes/InstructionPage.unity
+    path: Assets/Scenes/unused Scenes/InstructionPage.unity
     guid: edb96545a4d634e8586807d6264a0fc6
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
