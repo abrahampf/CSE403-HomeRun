@@ -1,0 +1,37 @@
+# Weekly Status Report
+
+## Team Report
+
+### Last Week Goals:
+
+### Frontend: 
+- Complete integration with all earlier features being in the main game before the weekend.
+- Address the major bugs that are currently in game
+- Refine mechanics related to bat swing, pitching, ball interaction, etc.
+- Complete bat swing animations.
+
+### Backend:
+- Finish writing scripts for backend
+- Add backend testing
+- Finish working on rotating database passwords for private backend repo
+- Connecting everything, front-end, back-end, and mechanics for our final release and preparing for our final release. Update documentation about the server and the use cases since we had to make some changes.
+- Make the instruction page document and update the readme file
+- Come as group and merge work to main branch (1 day)
+- Finalize final steps in what we will submit.
+- Also work on presentation.
+
+
+### Progress and Issues:
+
+- We have been able to get the user to interact with the gameplay scene with either swiping and clicking on the screen to hit the ball.
+- We ran into multiple bugs throughout the week, such as getting swiping to be detected on phones. 
+- Another issue we ran into was during our implementation of counting strikes against the player. The game was counting any click on the screen regardless of involvement with the game as a game action which in turn caused the strikes to increase when it shouldn't. We were able to fix this bug.
+- We also were able to display this new feature of showing the players score leader board
+
+
+### Outline/Plans for Upcoming Week:
+#### Begin implementation:
+- Working on and submitting individual final assignment
+
+
+ 
