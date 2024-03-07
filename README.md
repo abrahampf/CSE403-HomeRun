@@ -119,6 +119,9 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 - Build the system using the instructions above and save the executable file.
 - Navigate to the folder containing the executable file.
 - Open the executable file to launch the baseball game.
+- Before Running in Unity make sure you are in CSE403-HomeRun/Assets/Scenes/BeginScene.unity
+- <img width="467" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/100069516/33bb2a62-690f-4442-b80c-3535699ece6a">
+
 - On the upper right corner toggle over the game and select layout to 2 by 3
   
   <img width="467" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/00e0c307-f239-46b9-a28c-7796aba9c183">
