@@ -12,9 +12,9 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 
 ## Key Features
 - **Gameplay**: Engage in head-to-head matches against AI opponent.
-- **Authentication**: Register, sign-in and logout of thier account securly.
+- **Authentication**: Register, sign-in, and logout of their account securely.
 - **Interactive Batting**: Swipe to swing the bat and score runs.
-- **LeaderBoard**: Shows players high-scores and achievements.
+- **LeaderBoard**: Shows players high scores and achievements.
 
 ## Objectives
 - Deliver an immersive and interactive 3D gaming experience.
@@ -34,16 +34,14 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 - **Unity with C#**: Core for game development and handling front-end and core game mechanics.
 - **Android Studio**: Additional Android-specific features and testing.
 - **SQL and PHP**: Backend services, including server logic, database management, and web services.
-- **Unity APIs and Google Play Services**: Integration of in-app purchases, leaderboards, and Android functionalities.
-- **Third-Party SDKs**: Incorporation of ads, analytics, and social media features.
+- **Unity APIs**: Integration of leaderboards, and Android functionalities.
 
 ## Risks
 - Unity Learning Curve: Limited team experience with Unity presents a significant risk.
-- Google Play Store Compliance: Adhering to Google Play Store guidelines is challenging due to lack of deployment experience.
 
 ## Requirements
 ### Non-functional Requirements
-- Low loading time ensuring gaming experience that can take place in anytime, anywhere.
+- Low loading time ensures a gaming experience that can take place anytime, anywhere.
 - The game should run smoothly on various devices.
 - Design for minimal and efficient user interactions.
 
@@ -64,12 +62,12 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 - Clone the repository to your local machine.
 - Open Unity Hub and add the cloned repository.
 - Navigate to the repository folder and open it in Unity Editor.
-- Connect the computer and you phone via a wire connector.
-- Change the settings on your android phone to developer mode.
+- Connect the computer and your phone via a wire connector.
+- Change the settings on your Android phone to developer mode.
   
   <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/553d05d7-65f0-474a-971b-8a92588ee25b">
 
-- Change the battery setting to Trasfer files (MTP) by sliding down the battery menu.
+- Change the battery setting to Transfer files (MTP) by sliding down the battery menu.
   
   <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/f276bb47-45e5-4a76-b93c-70e3a602de20">
 
@@ -81,15 +79,15 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 
   <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/c450383d-3686-4649-bcb7-51d5ea50c345">
 
-- On the right tab of the android, in the Run Device setting select all compatible devices and then click on refresh. 
+- On the right tab of the Android, in the Run Device setting select all compatible devices and then click on refresh. 
 
   <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/48d4e591-d01f-4318-a5a2-9cb64e47958e">
 
-- Go to the Run device setting again and now your android phone should show up select that and press the build button.
+- Go to the Run device setting again and now your Android phone should show up select that and press the build button.
 
 - This should let you save the APK, save it in your desired folder.
 
-- Drag the APK folder in the desired folder in your phone from your computer. 
+- Drag the APK folder in the desired folder on your phone from your computer. 
 
 - Find that APK in your phone (it should be where you placed it from your computer) and then install it. 
 
@@ -111,13 +109,13 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
 
   <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/569ed0f0-1a44-4750-8fb6-5e15be869d04">
  
-- Select and click Run All button to run all the test.
+- Select and click the Run All button to run all the tests.
 
   <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/1741208d-1c74-47db-bb59-7d71b6454575">
 
 
 ### Run The System
-#### How to Run the System for unity:
+#### How to Run the System for Unity:
 - Build the system using the instructions above and save the executable file.
 - Navigate to the folder containing the executable file.
 - Open the executable file to launch the baseball game.
@@ -125,7 +123,7 @@ Home Run offers a thrilling single-player experience set in a vibrant baseball s
   
   <img width="467" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/00e0c307-f239-46b9-a28c-7796aba9c183">
   
-- On the bottom left cornor, click on the drop down menu on Game and select Simulator.
+- On the bottom left corner, click on the drop-down menu on Game and select Simulator.
 
   <img width="500" alt="image" src="https://github.com/abrahampf/CSE403-HomeRun/assets/108777737/ccb7dac2-8ab8-4b21-b631-8814242d0ffd">
 
