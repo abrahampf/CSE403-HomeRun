@@ -12,7 +12,7 @@ using UnityEngine.EventSystems;
 public class PitchManger : MonoBehaviour
 {
     // Strength of the force
-    public float forceStrength = 5f;
+    public float forceStrength = 2f;
 
     // Direction of the force
     public Vector3 forceDirection = new Vector3(0f, 0f, 1f); // Example: to the right
@@ -28,6 +28,11 @@ public class PitchManger : MonoBehaviour
     public int maxStrikes = 4;
     public static int curr_score = 0;
 
+     private Vector2 touchStartPos;
+    private Vector2 touchEndPos;
+
+    public float swipeThreshold = 50f;
+
     void Start()
     {
         pitch = new New_Pitch();
@@ -40,21 +45,53 @@ public class PitchManger : MonoBehaviour
      void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        // if (Input.GetMouseButtonDown(0))
+        // {
+        //     if (bat != null)
+        //     {
+        //         bat.BatBall();
+        //         if (!bat.forceAdded) {
+        //             IncrementStrikes();
+        //         }
+        //         else if (bat.forceAdded){
+        //             curr_score += 2;
+        //         }
+        //     }
+        //     else
+        //     {
+        //         UnityEngine.Debug.LogError("Bat reference not set in InputManager!");
+        //     }
+        // }
+
+
+        if (Input.touchCount > 0)
         {
-            if (bat != null)
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
             {
-                bat.BatBall();
-                if (!bat.forceAdded) {
-                    IncrementStrikes();
-                }
-                else if (bat.forceAdded){
-                    curr_score += 2;
-                }
+                touchStartPos = touch.position;
             }
-            else
+            else if (touch.phase == TouchPhase.Ended)
             {
-                UnityEngine.Debug.LogError("Bat reference not set in InputManager!");
+                touchEndPos = touch.position;
+
+                // Calculate swipe distance
+                float swipeDistance = Vector2.Distance(touchStartPos, touchEndPos);
+
+                // Check if the swipe distance is significant
+                if (swipeDistance > swipeThreshold)
+                {
+                    // Swipe detected, handle it
+                    // bat.BatBall(touchEndPos - touchStartPos, swipeDistance);
+                    if (!bat.forceAdded) {
+                        IncrementStrikes();
+                    }
+                    else if (bat.forceAdded){
+                        curr_score += 2;
+                    }
+                }
+
             }
         }
     }

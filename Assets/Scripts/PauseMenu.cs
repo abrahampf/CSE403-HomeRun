@@ -37,10 +37,6 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-
-        if (PitchManger.curr_score > 0) {
-            PitchManger.curr_score--;
-        }
         isPaused = true;
         pauseMenu.SetActive(true);
         InstruObj.SetActive(false);

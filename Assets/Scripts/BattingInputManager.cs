@@ -42,22 +42,7 @@ public class BattingInputManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            /*
-            // Check if the ball is within the specified z-value range
-            if (IsBallInRange())
-            {
-                // Call the BatBall method when mouse click is detected and ball is within range
-                if (bat != null)
-                {
-                    float ballContactZValue = -bat.transform.position.z;
-                    bat.BatBall(ballContactZValue);
-                }
-                else
-                {
-                    UnityEngine.Debug.LogError("Bat reference not set in InputManager!");
-                }
-            }
-            */
+
             if (bat != null)
             {
                 bat.BatBall();
