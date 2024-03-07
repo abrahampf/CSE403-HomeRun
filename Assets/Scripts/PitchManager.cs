@@ -4,6 +4,10 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using JetBrains.Annotations;
+using UnityEngine.Networking;
+using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.EventSystems;
 
 public class PitchManger : MonoBehaviour
 {
@@ -24,7 +28,6 @@ public class PitchManger : MonoBehaviour
     public int maxStrikes = 4;
     public static int curr_score = 0;
 
-
     void Start()
     {
         pitch = new New_Pitch();
@@ -44,7 +47,8 @@ public class PitchManger : MonoBehaviour
                 bat.BatBall();
                 if (!bat.forceAdded) {
                     IncrementStrikes();
-                } else {
+                }
+                else if (bat.forceAdded){
                     curr_score += 2;
                 }
             }
@@ -57,8 +61,11 @@ public class PitchManger : MonoBehaviour
 
     void IncrementStrikes()
     {
-        // Increment the strikes count
-        strikes++;
+
+        if (!PauseMenu.isPaused) {
+            // Increment the strikes count
+            strikes++;
+        }
 
         // Check for game over
         if (strikes >= maxStrikes)
@@ -67,7 +74,7 @@ public class PitchManger : MonoBehaviour
             DBManager.currentScore = curr_score;
             // Not able to update highscore for a user that is already signed in
             // Need to fix
-            // DbCalls.CallUpdate();
+            CallUpdate();
             Reset();
             CallGameOver();
         }
@@ -81,7 +88,7 @@ public class PitchManger : MonoBehaviour
         return curr_score;
     }
 
-    void Reset()
+    public static void Reset()
     {
         // Reset the strikes count
         strikes = 0;
@@ -98,6 +105,31 @@ public class PitchManger : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         } else {
             SceneManager.LoadScene("GameOver2");
+        }
+    }
+
+    public void CallUpdate() {
+        if (DBManager.highscore < DBManager.currentScore && DBManager.loggedIn()) {
+            StartCoroutine(Upd());
+        }
+    }
+
+    IEnumerator Upd() {
+        // Debug.Log("Updating...");
+        WWWForm form = new WWWForm();
+        form.AddField("username", DBManager.username);
+        form.AddField("new_score", DBManager.currentScore.ToString());
+        string action = "Update";
+        form.AddField("action", action);
+        string url = "https://cse403-homerunphp.azurewebsites.net/";
+        UnityWebRequest www = UnityWebRequest.Post(url, form);
+        yield return www.SendWebRequest();
+        print(www.downloadHandler.text);
+        if (www.downloadHandler.text[0] != '0') {
+            // Debug.Log("Couldn't update high score: " + www.downloadHandler.text);
+        } else {
+            // Debug.Log("User high score updated successfully");
+            DBManager.highscore = DBManager.currentScore;
         }
     }
 }

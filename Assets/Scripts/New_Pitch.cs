@@ -10,7 +10,7 @@ public class New_Pitch
     private Vector3 initialPos;
     private bool continuousPitching  = false;
 
-    private int increase = 2;
+    private int increase = 1;
     public void Initialize(Rigidbody rigidbody, Vector3 direction, float strength)
     {
         rb = rigidbody;

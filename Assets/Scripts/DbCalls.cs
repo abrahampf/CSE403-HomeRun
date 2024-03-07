@@ -89,7 +89,7 @@ public class DbCalls : MonoBehaviour
         form.AddField("highscore", DBManager.currentScore.ToString());
         string url = "https://cse403-homerunphp.azurewebsites.net";
         UnityWebRequest www = UnityWebRequest.Post(url, form);
-        backendResponse.text = "Register...";
+        backendResponse.text = "Registering...";
         yield return www.SendWebRequest();
 
 
