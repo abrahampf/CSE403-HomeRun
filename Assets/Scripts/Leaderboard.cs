@@ -35,13 +35,13 @@ public class Leaderboard : MonoBehaviour
 
     public void GameScene()
     {
-        Debug.Log("Game scene here");
+        // Debug.Log("Game scene here");
         SceneManager.LoadScene("MainScene");
     }
 
     public void BeginScene()
     {
-        Debug.Log("Begin scene here");
+        // Debug.Log("Begin scene here");
         DBManager.logOut();
         DbCalls.Clear_Dictionary();
         SceneManager.LoadScene("BeginScene");

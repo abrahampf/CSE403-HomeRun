@@ -40,7 +40,7 @@ public class DbCalls : MonoBehaviour
 
     IEnumerator LogIn() {
         WWWForm form = new WWWForm();
-        Debug.Log("Trying to Log in");
+        // Debug.Log("Trying to Log in");
         action = "LogIn";
         form.AddField("username", username.text);
         form.AddField("password", passwordField.text);
@@ -51,7 +51,7 @@ public class DbCalls : MonoBehaviour
         yield return www.SendWebRequest();
 
         if (www.downloadHandler.text[0] != '0') {
-            Debug.Log("User log in failed. Error " + www.downloadHandler.text);
+            // Debug.Log("User log in failed. Error " + www.downloadHandler.text);
             string errorString = www.downloadHandler.text;
             int colonIndex = errorString.IndexOf(':');
             string errorMessage = errorString[(colonIndex + 2)..];
@@ -59,7 +59,7 @@ public class DbCalls : MonoBehaviour
             float delayInSeconds = 2.5f;
             Invoke(nameof(ReloadLoginScene), delayInSeconds);
         } else {
-            Debug.Log("User logged in successfully");
+            // Debug.Log("User logged in successfully");
             backendResponse.text = "Logged in as: " + username.text;
             DBManager.username = username.text;
             int db_highscore = int.Parse(www.downloadHandler.text.Split('\t')[1]);
@@ -81,7 +81,7 @@ public class DbCalls : MonoBehaviour
 
     IEnumerator Register() {
         WWWForm form = new WWWForm();
-        Debug.Log("Trying to register");
+        // Debug.Log("Trying to register");
         action = "Register";
         form.AddField("username", username.text);
         form.AddField("password", passwordField.text);
@@ -94,7 +94,7 @@ public class DbCalls : MonoBehaviour
 
 
         if (www.downloadHandler.text[0] != '0') {
-            Debug.Log("User registrations failed. Error " + www.downloadHandler.text);
+            // Debug.Log("User registrations failed. Error " + www.downloadHandler.text);
             string errorString = www.downloadHandler.text;
             int colonIndex = errorString.IndexOf(':');
             string errorMessage = errorString[(colonIndex + 2)..];
@@ -102,7 +102,7 @@ public class DbCalls : MonoBehaviour
             float delayInSeconds = 3f;
             Invoke(nameof(ReloadLoginScene), delayInSeconds);
         } else {
-            Debug.Log("Registered successfully");
+            // Debug.Log("Registered successfully");
             backendResponse.text = "Created Account as: " + username.text;
             DBManager.highscore = DBManager.currentScore;
             DBManager.username = username.text;
@@ -119,7 +119,7 @@ public class DbCalls : MonoBehaviour
 
     // Update is called once per frame
     IEnumerator Upd() {
-        Debug.Log("Updating...");
+        // Debug.Log("Updating...");
         WWWForm form = new WWWForm();
         form.AddField("username", DBManager.username);
         form.AddField("new_score", DBManager.currentScore.ToString());
@@ -130,9 +130,9 @@ public class DbCalls : MonoBehaviour
         yield return www.SendWebRequest();
         print(www.downloadHandler.text);
         if (www.downloadHandler.text[0] != '0') {
-            Debug.Log("Couldn't update high score: " + www.downloadHandler.text);
+            // Debug.Log("Couldn't update high score: " + www.downloadHandler.text);
         } else {
-            Debug.Log("User high score updated successfully");
+            // Debug.Log("User high score updated successfully");
             DBManager.highscore = DBManager.currentScore;
         }
     }
@@ -140,7 +140,7 @@ public class DbCalls : MonoBehaviour
     // Update is called once per frame
     IEnumerator Leader()
     {
-        Debug.Log("Getting leaders...");
+        // Debug.Log("Getting leaders...");
         WWWForm form = new WWWForm();
         string action = "Leaderboard";
         form.AddField("action", action);
@@ -148,14 +148,14 @@ public class DbCalls : MonoBehaviour
         UnityWebRequest www = UnityWebRequest.Post(url, form);
         yield return www.SendWebRequest();
         if (www.downloadHandler.text[0] != '0') {
-            Debug.Log("User log in failed. Error " + www.downloadHandler.text);
+            // Debug.Log("User log in failed. Error " + www.downloadHandler.text);
         } else {
-            Debug.Log(www.downloadHandler.text);
+            // Debug.Log(www.downloadHandler.text);
             string backendString = www.downloadHandler.text;
             string user_and_scores = backendString[2..];
-            Debug.Log(user_and_scores);
+            // Debug.Log(user_and_scores);
             string[] usersNumberPairs = user_and_scores.Split('\t');
-            Debug.Log(usersNumberPairs.ToString());
+            // Debug.Log(usersNumberPairs.ToString());
             foreach(var pair in usersNumberPairs) {
                 string[] seperate = pair.Split(':');
                 if (seperate.Length == 2) {

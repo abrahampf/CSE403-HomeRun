@@ -55,7 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     public void GoToMainMenu ()
     {
-        PitchManger.Reset();
+        PitchManager.Reset();
         Time.timeScale = 1f;
         if (DBManager.loggedIn()) {
             SceneManager.LoadScene("New_leader");

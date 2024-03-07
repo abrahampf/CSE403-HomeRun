@@ -26,10 +26,6 @@ public class New_Pitch
         while (continuousPitching)
         {
             ResetBall();
-            // Calculate the direction vector towards the initial position
-            // Vector3 directionToInitialPos = (initialPos - rb.transform.position).normalized;
-            // forceDirection = directionToInitialPos;
-            // Wait for the specified pitch delay
             yield return new WaitForSeconds(pitchDelay);
 
             forceStrength += increase;
@@ -45,12 +41,12 @@ public class New_Pitch
 
     public void ResetBall()
     {
-        Debug.Log("Reset Ball position");
+        // Debug.Log("Reset Ball position");
         // Reset the ball's position and velocity (customize as needed)
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
-         Debug.Log("Ball position after reset: " + rb.transform.position);
+        //  Debug.Log("Ball position after reset: " + rb.transform.position);
         rb.transform.position = initialPos;
-         Debug.Log("Ball position after setting: " + rb.transform.position);
+        //  Debug.Log("Ball position after setting: " + rb.transform.position);
     }
 }

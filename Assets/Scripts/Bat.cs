@@ -48,7 +48,7 @@ public class Bat : MonoBehaviour
 
             // Debug.Log("Force added to ball");
             GetComponent<Rigidbody>().AddForce((Vector3.back + delayedImpactForce) * -100f, ForceMode.Impulse);
-            Debug.Log("Force added to ball");
+            // Debug.Log("Force added to ball");
             forceAdded = true;
         } else {
             forceAdded = false;
@@ -71,7 +71,7 @@ public class Bat : MonoBehaviour
 
             float ballContactZValue = -transform.position.z + batterReference.referencePosition.z;
 
-            UnityEngine.Debug.Log("Entered BatBall for swipe");
+            // UnityEngine.Debug.Log("Entered BatBall for swipe");
             // Exert a force to "bat" the ball back
             // Flip the direction of added force for realism
             // Use a 0.15 factor to allow a narrower angles of batting to decrease the high odds of out
@@ -95,10 +95,10 @@ public class Bat : MonoBehaviour
         if (ballZValue <= frontHittingBoundary + batterReference.referencePosition.z &&
             ballZValue >= backHittingBoundary + batterReference.referencePosition.z)
         {
-            UnityEngine.Debug.Log("Ball is in range");
+            // UnityEngine.Debug.Log("Ball is in range");
             return true;
         }
-        UnityEngine.Debug.Log("Ball is not in range");
+        // UnityEngine.Debug.Log("Ball is not in range");
         return false;
     }
 }

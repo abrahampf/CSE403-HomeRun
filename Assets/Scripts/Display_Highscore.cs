@@ -13,15 +13,15 @@ public class Display_Highscore : MonoBehaviour
     {
         if (display_highscore != null) {
             display_highscore.text = $"{DBManager.highscore}";
-            current_strikes.text = $"Strikes: {PitchManger.Get_strikes()}";
-            scoreText.text = $"{PitchManger.Get_strikes()}";
+            current_strikes.text = $"Strikes: {PitchManager.Get_strikes()}";
+            scoreText.text = $"{PitchManager.Get_strikes()}";
         } else {
             UnityEngine.Debug.LogError("Highscore text is null");
         }
     }
 
     void Update() {
-         current_strikes.text = $"Strikes: {PitchManger.Get_strikes()}";
-         scoreText.text = $"{PitchManger.Get_Score()}";
+         current_strikes.text = $"Strikes: {PitchManager.Get_strikes()}";
+         scoreText.text = $"{PitchManager.Get_Score()}";
     }
 }

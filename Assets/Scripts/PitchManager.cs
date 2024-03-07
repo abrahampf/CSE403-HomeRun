@@ -9,7 +9,7 @@ using UnityEngine.Networking;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.EventSystems;
 
-public class PitchManger : MonoBehaviour
+public class PitchManager : MonoBehaviour
 {
     // Strength of the force
     public float forceStrength = 2f;
